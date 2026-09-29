@@ -1,18 +1,12 @@
 #include <stdio.h>
 
 int main (void) { 
-   int a, b;
+    int s;
 
-   printf("input two integers :");
-   scanf("%d %d", &a, &b);
+    printf("input the second :");
+    scanf("%d", &s);
+    
+    printf("the time is %d : %d\n", s / 60, s % 60);
 
-   printf("+ result is %d\n", a+b);
-   printf("- result is %d\n", a-b);
-   printf("* result is %d\n", a*b);
-
-   if (b != 0){
-    printf("/ result is %d\n", a/b);
-    printf("%% result is %d\n", a%b);
-   }
    return 0;
 }
