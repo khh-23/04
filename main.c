@@ -1,21 +1,12 @@
 #include <stdio.h>
 
 int main (void) { 
-   unsigned int x;
-   int b;
+   int s;
 
-   printf("input a number : ");
-   scanf("%ui", &x);
+   printf("input the second : ");
+   scanf("%d", &s);
 
-   for (b=0; x != 0; x >>= 1)
-   {
-    if (x & 1)
-    {
-        b++;
-    }
-   }
-
-   printf("The result is : %i\n", b);
+   printf("The time for %d second is %d : %d : %d", s, s/3600, (s%3600)/60, (s%3600)%60);
 
    return 0;
 }
