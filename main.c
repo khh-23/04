@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 int main (void) { 
-    int x, y, z, m; 
-    int a, b, c; 
+   int a, b;
 
-    x = 2; 
-    z = 1; 
-    a = 3; 
-    b = 4; 
-    c = 5;
+   printf("input two integers :");
+   scanf("%d %d", &a, &b);
 
-    y = a*x*x + b*x + c;
-    m = (x + y + z) / 3;
+   printf("+ result is %d\n", a+b);
+   printf("- result is %d\n", a-b);
+   printf("* result is %d\n", a*b);
 
-    printf("y=%d, m=%d", y, m);
+   if (b != 0){
+    printf("/ result is %d\n", a/b);
+    printf("%% result is %d\n", a%b);
+   }
+   return 0;
 }
